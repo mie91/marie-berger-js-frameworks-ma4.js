@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import RecipeList from "../components/RecipeList";
 
 function RecipeItem({ href, title, thumbnail }) {
-  return (
-    <h1>Hello</h1>
-  );
+   return (
+     <>
+       <h2>Recipes</h2>
+       <RecipeList />
+     </>
+   );
 }
 
 export default RecipeItem;
