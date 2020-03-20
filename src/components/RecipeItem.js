@@ -5,10 +5,10 @@ import Card from "react-bootstrap/Card";
 function RecipeItem({ title, thumbnail, ingredients, href }) {
 	return (
     <Card>
-      <Card.Img variant="top" src={thumbnail} />
+      <Card.Img  variant="top" src={thumbnail} />
       <Card.Title>{title}</Card.Title>
       <Card.Body>
-        <a href={href} class="btn btn-info">
+        <a href={href} className="btn btn-info">
           More details
         </a>
       </Card.Body>
