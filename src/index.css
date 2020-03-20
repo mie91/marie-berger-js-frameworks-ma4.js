@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0px 5px 16px #ccc;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 0 #ccc;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.search {
+    margin: 2em 0;
+}
+
+.clear-search {
+    margin-bottom: 30px;
+}
+
+.clear-search__button {
+    margin-left: 10px;
+}

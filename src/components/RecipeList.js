@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { BASE_URL } from "../constants/API";
 import Spinner from "react-bootstrap/Spinner";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import RecipeItem from "./RecipeItem";
 
 
 function RecipeList() {
@@ -19,12 +22,18 @@ if (loading) {
 }
 
   return (
-    <ul>
-      {recipes.map(recipe => (
-        <li key={recipe.title}>{recipe.title}</li>
-      ))}
-    </ul>
-  );
+    <Row>
+        {recipes.map(recipe => {
+            const { title, thumbnail, ingredients, href } = recipe;
+
+            return (
+                <Col sm={6} md={4} key={title}>
+                    <RecipeItem title={title} thumbnail={thumbnail} ingredients={ingredients} href={href} />
+                </Col>
+            );
+        })}
+    </Row>
+);
 }
 
 export default RecipeList;

@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import RecipeItem from "../components/RecipeItem";
+import Home from "../components/Home";
 
 
 function Layout() {
@@ -13,7 +13,7 @@ function Layout() {
     <Router>
       <Container>
         <Switch>
-          <Route path="/" exact component={RecipeItem} />
+          <Route path="/" exact component={Home} />
         </Switch>
       </Container>
     </Router>
